@@ -11,7 +11,7 @@ export const ContactList = ({ contacts, handleDelete }) => {
           <Item key={id}>
             <Name>{name}:</Name>
             <Number>{number}</Number>
-            <Delete type="button" onClick={() => handleDelete(id)}>
+            <Delete type="button" onClick={() => handleDelete(id)} aria-label='Delete contact'>
               <FiUserMinus size="26" />
             </Delete>
           </Item>
